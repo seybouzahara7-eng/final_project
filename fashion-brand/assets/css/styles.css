@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    line-height: 1.6;
+}
+.page {
+    padding: 80px 20px;
+    text-align: center;
+    
+
+}
+
+.page h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.page p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+.page div {
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+.page div p {
+    text-align: left;
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.admin-form input,
+.admin-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus {
+    border-color: #000;
+}
+
+.admin-form textarea {
+    resize: none;
+    height: 120px;
+}
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #222;
+    transform: translateY(-2px);
+}
+
+.success {
+    background: #e8f8ee;
+    color: #0f5132;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.error {
+    background: #fdecea;
+    color: #842029;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.navbar {
+    background: #b08d57;
+    padding: 20px 40px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fefefe;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid #000;
+}
+.footer {
+    background: #b08d57;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 80px;
+}
+@media (max-width: 768px) {
+    .page h1 {
+        font-size: 32px;
+    }
+
+    .page div {
+        padding: 25px;
+    }
+}
+.admin-body {
+    background: #f4f6f8;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.admin-container {
+    max-width: 1100px;
+    margin: auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(50, 16, 16, 0.08);
+}
+.admin-container h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #b08d57;
+    letter-spacing: 1px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.admin-table thead {
+    background: #111;
+}
+
+.admin-table th {
+    padding: 14px;
+    background: #b08d57;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.admin-table td {
+    padding: 14px;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.admin-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.status-pending {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+.status-accepted {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.status-declined {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.action-btn {
+    background:#e67e22;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #fff;
+}
+
+.btn-accept {
+    background-color: #27ae60;
+}
+
+.btn-accept:hover {
+    background-color: #1e8449;
+    transform: scale(1.05);
+}
+
+.btn-decline {
+    background-color: #c0392b;
+}
+
+.btn-decline:hover {
+    background-color: #962d22;
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 20px;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+}
+
