@@ -1,12 +1,12 @@
 <?php
-include "../fashion-brand/config/db.php";
+include "./config/db.php";
 $about = null;
 $aboutRes = $conn->query("SELECT * FROM portfolio_content WHERE type='about' ORDER BY created_at DESC LIMIT 1");
 if ($aboutRes && $aboutRes->num_rows > 0) {
     $about = $aboutRes->fetch_assoc();
 }
 
-// $projectsRes = $conn->query("SELECT * FROM portfolio_content WHERE type='project' ORDER BY created_at DESC");
+$projectsRes = $conn->query("SELECT * FROM portfolio_content WHERE type='project' ORDER BY created_at DESC");
 ?>
 
 <!DOCTYPE html>
